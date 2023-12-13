@@ -46,11 +46,20 @@ export default {
   },
   data() {
     return {
+      activeIndex
     };
   },
   created() {
   },
   methods: {
+  },
+  watch:{
+    $route: {
+      handler() {
+        this.activeIndex = this.$route.path
+      },
+      immediate: true
+    }
   }
 };
 </script>

@@ -23,7 +23,7 @@
       <el-container>
         <el-aside :width="asideWidth">
         <span class="collapse" @click="collapse">|||</span>
-          <el-menu :width="asideWidth" :collapse="isCollapse" mode="vertical" :collapse-transition="false" default-active="2" class="el-menu-vertical-demo" unique-opened background-color="#545c64" text-color="#fff" active-text-color="#ffd04b" router >
+          <el-menu :width="asideWidth" :collapse="isCollapse" mode="vertical" :collapse-transition="false" :default-active="activeIndex" class="el-menu-vertical-demo" unique-opened background-color="#545c64" text-color="#fff" active-text-color="#ffd04b" router >
             <el-submenu index="1">
               <template slot="title">
                 <i class="el-icon-user"></i>
@@ -85,6 +85,7 @@
 export default {
   data () {
     return {
+      activeIndex: '',
       username: '',
       logData: {},
       isCollapse: false,
@@ -160,6 +161,14 @@ export default {
         this.isCollapse = false
         this.asideWidth = '200px'
       }
+    }
+  },
+  watch:{
+    $route: {
+      handler() {
+        this.activeIndex = this.$route.path
+      },
+      immediate: true
     }
   }
 }
