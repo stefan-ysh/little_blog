@@ -1,0 +1,24 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@vue/cli-service": "^5.0.8",
+    "axios": "^1.6.2",
+    "echarts": "^5.4.3",
+    "element-ui": "^2.15.14",
+    "nprogress": "^0.2.0",
+    "vue": "^2.7.15",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.6.5",
+    "vuex": "^3.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vue-cli-service serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

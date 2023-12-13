@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:#fff;
+}
+
+.el-pagination{
+    width: 550px;
+    /* background-color: blue; */
+    margin: 0 auto;
+}
