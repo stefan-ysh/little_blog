@@ -10,7 +10,7 @@
       <el-col :span="5">
       <!-- 添加了@input事件后 clearable就失效了 -->
         <!-- <el-input placeholder="输入进行搜索..." v-model="queryInfo.query" @input="getUserList" clearable @clear="getUserList"> -->
-        <el-input placeholder="输入进行搜索..." v-model="queryInfo.query" @input="getUserList">
+        <el-input placeholder="输入进行搜索..." v-model="queryInfo.query" @input="getUserList" clearable >
         </el-input>
                   <!-- <el-button icon="el-icon-search" slot="append" @click="getUserList" ></el-button> -->
       </el-col>
@@ -24,7 +24,7 @@
     <el-card shadow="always" :body-style="{ padding: '20px' }">
       <!-- <div slot="header"> -->
       <!-- 用户列表区域 -->
-        <el-table :data="datalist" style="width: 100%" border  height="450" highlight-current-row  @cell-click="handle">
+        <el-table :data="datalist" style="width: 100%" border  height="calc(100vh - 270px)" highlight-current-row  @cell-click="handle">
           <el-table-column type="index" width="50"  align="center"  label="#"> </el-table-column>
           <el-table-column prop="username" align="center" label="姓名"> </el-table-column>
           <el-table-column prop="gender" align="center" label="性别"> </el-table-column>

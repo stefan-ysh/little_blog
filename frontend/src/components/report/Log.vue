@@ -18,7 +18,7 @@
     </el-row>
     <el-card>
      <!-- <div slot="header"> -->
-    <el-table :data="logDataList" border stripe height="450">
+    <el-table :data="logDataList" border stripe height="calc(100vh - 270px)">
       <el-table-column type="index" align="center" label="#"></el-table-column>
       <el-table-column sortable width="200" label="操作时间" align="center" prop="operationTime">
         <template slot-scope="scope">

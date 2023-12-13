@@ -22,7 +22,7 @@
     <el-card shadow="always" :body-style="{ padding: '20px' }">
       <!-- <div slot="header"> -->
       <!-- 文章列表 -->
-      <el-table  :data="articleList" border stripe style="width: 100%" highlight-current-row height="450"  @cell-click="handle">
+      <el-table  :data="articleList" border stripe style="width: 100%" highlight-current-row height="calc(100vh - 270px)" @cell-click="handle">
           <el-table-column fit align="center" type="index" width="50" label="#"> </el-table-column>
           <el-table-column  align="center" height="20"  min-width="400" prop="title" label="标题">
             <template slot-scope="scope">

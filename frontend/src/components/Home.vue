@@ -177,7 +177,7 @@ export default {
 }
 .el-container {
   width: 100%;
-  height: 650px;
+  height: 100vh;
 }
 .el-header {
   background-color: rgb(84, 92, 100);
